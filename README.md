@@ -1,4 +1,7 @@
-﻿## Bootstrap常用class
+﻿## 鸿宇多用户商城
+* 基于MVC架构，前端采用Bootstrap框架,后端为ThinkPHP框架。
+
+## Bootstrap常用class
 * breadcrumb  (设置背景色为 #F5F5F5)
 * container （固定宽度）
 * container-fluid （100% 宽度）
