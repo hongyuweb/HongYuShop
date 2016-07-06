@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="ThemeBucket">
+    <link rel="shortcut icon" href="#" type="image/png">
+    <title>{$Think.const.SHOP_NAME} - 管理员登录</title>
+    <link href="{$Think.PUBLIC_URL}css/bootstrap.min.css" rel="stylesheet">
+    <link href="{$Think.PUBLIC_URL}css/login.css" rel="stylesheet">
+</head>
+<body class="login-body">
+
+<div class="container">
+
+    <form class="form-signin" action="__SELF__" method="post">
+        <div class="form-signin-heading text-center">
+            <h1 class="sign-title">管理员登录</h1>
+            <img src="{$Think.PUBLIC_URL}images/login-logo.png" alt=""/>
+        </div>
+        <div class="login-wrap">
+            <input name="username" type="text" class="form-control" placeholder="用户名" autofocus>
+            <input name="password" type="password" class="form-control" placeholder="密码">
+
+            <button class="btn btn-lg btn-login btn-block" type="submit">登录</button>
+
+            <div class="registration hidden">
+                Not a member yet?
+                <a class="" href="#">
+                    Signup
+                </a>
+            </div>
+            <label class="checkbox">
+                <input type="checkbox" value="" checked="checked"> 自动登录
+                <span class="pull-right">
+                    <a data-toggle="modal" href="#myModal"> 忘记密码?</a>
+                </span>
+            </label>
+
+        </div>
+    </form>
+    <form class="form-signin" action="__SELF__" method="post">
+        <!-- Modal -->
+        <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">忘记密码 ?</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>请输入您的电子邮件地址以重新设置您的密码。</p>
+                        <input type="text" name="email" placeholder="Email" autocomplete="off" class="form-control placeholder-no-fix">
+
+                    </div>
+                    <div class="modal-footer">
+                        <button data-dismiss="modal" class="btn btn-default" type="button">取消</button>
+                        <button class="btn btn-primary" type="button">提交</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
+    </form>
+
+</div>
+
+<script src="{$Think.PUBLIC_URL}js/jquery.min.js"></script>
+<script src="{$Think.PUBLIC_URL}js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
