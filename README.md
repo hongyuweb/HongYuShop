@@ -10,6 +10,7 @@
 * console.log()     (代替alert弹出对话框)
 * center-block  (让内容块居中)
 * text-center   (让元素内文字或者内容块居中)
+* autofocus (autofocus="autofocus"当页面加载时，会获得焦点)
 
 ## ThinkPHP
 * {include file="Shop/Home/View/Public/header.html"}    (引入HTML模板文件)
